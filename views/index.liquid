@@ -1,14 +1,28 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+<article class="visite-kaartje"> 
 
-  <p>{{ person.name }}</p>
+       <header class="visite-kaartje"> 
 
-  <footer></footer>
-</article>
+        <h1>{{ person.name }}</h1>
+        <p><em>"gitem"</em></p>
+        <br>
+        <p><em>FDND student</em></p>
+        <br>
+
+        <button><a href="wie-ben-ik.html">Wie ben ik?</a></button>
+        <button><a href="hobbies.html">Hobbies</a></button>
+        <button><a href="studie.html">Studie</a></button>
+        <button><a href="trips-trips-trips.html">Trips Trips Trips</a></button>
+
+      </header>
+
+      <br>
+
+      <img src="assets/xMIJN FOTO.HEIC" width="300 " height="400" class="visite-kaartje"> 
+  
+      <p>Dit is Khitam ✨<br>een meid van 20, Klik op een mapje om meer te zien ✨</br></p>
+
+     </article> 
 
 {% render 'partials/foot.liquid' %}
