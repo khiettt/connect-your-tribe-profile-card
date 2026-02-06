@@ -1,16 +1,120 @@
 body {
   color: #f1bc52;
   font-family: "roboto", sans-serif;
-  width: 100%;
+  /* width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
-background-color: #a3a380 
+background-color: #a3a380  */
+
+header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+img{
+  width: 300px;
+  border-radius: 50px;
+}
 
 } 
-h1 {
+h1 h1{
   color:#543618;
+  display: flex;
+  justify-items: flex-start;
 }
-dl { 
-  color:#543618;
+
+.secondary-info{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+button{
+  width: 70px;
+  height: 30px;
+  background-color: #543618;
+  border: 0 solid;
+  border-radius: 10px;
+  transition: 1s;
+  cursor: pointer;
+  
+  &:hover{
+    background-color: #f1bc52;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+    transition: all .3s linear;
+    cursor: pointer;
+  }
+}
+p{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.visite-kaartje{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 33%;
+  width: 500px;
+  height: 600px;
+  border: 0px solid color(#F1EDE3);
+  border-radius: 50px;
+  background-color: #a3a380;
+
+  animation-name: floating;
+  transition: ease-in-out infinite;
+  animation-duration: 5s;
+}
+
+
+@keyframes floating{
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }	
+}
+
+/* vacay */
+.vacay-bestemming{
+  width: 100px;
+  height: 20px;
+  background-color: #543618;
+  border: 0 solid;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  animation-name: float;
+  animation-duration: 3s;
+  animation: linear 1s infinite alternate slide-in;
+}
+
+@keyframes float{
+  0%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(-50%);
+  }
+  100%{
+    transform: translate(50%);
+  }
 }
